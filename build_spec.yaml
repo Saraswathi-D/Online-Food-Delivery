@@ -9,12 +9,3 @@ steps:
     name: "Regression Testing"
     command: |
       mvn test
-  - type: Command
-    name: "Package"
-    command: |
-      mvn package
-
-outputArtifacts:
-  - name: binary_jar
-    type: BINARY
-    location: target/*.jar
